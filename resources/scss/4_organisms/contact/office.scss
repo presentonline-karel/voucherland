@@ -1,0 +1,73 @@
+.office {
+    &__content {
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        .p {
+            margin-bottom: 20px;
+        }
+
+        .city {
+            color: $neutrals-8;
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+
+        .p:last-of-type {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__maps {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+/* TABLET PORTRAIT - 1024PX */
+@media only screen and (min-width: $tablet-landscape) {
+    .office {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 75px;
+
+        &__content {
+            width: 22vw;
+        }
+
+        &__maps {
+            width: 44vw;
+            height: 500px;
+        }
+    }
+}
+
+/* DESKTOP - 1280PX */
+@media only screen and (min-width: $desktop-1) {
+    .office {
+        &__content {
+            width: 22vw;
+        }
+
+        &__maps {
+            width: 44vw;
+            height: 500px;
+        }
+    }
+}
+
+/* DESKTOP - 1440PX */
+@media only screen and (min-width: $desktop-3) {
+    .office {
+        &__content {
+            width: 318px;
+        }
+
+        &__maps {
+            width: 635px;
+            height: 500px;
+        }
+    }
+}

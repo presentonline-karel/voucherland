@@ -1,0 +1,116 @@
+.voucher {
+    background-color: $neutrals-3;
+    padding: 20px;
+    border: $border-item;
+    border-radius: $border-radius-small;
+    margin-top: 20px;
+
+    .flex {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__product {
+        &__percentage-container {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            text-align: center;
+            background-color: $primary-color;
+
+            &__percentage {
+                color: $neutrals-8;
+                font-family: $primary-font;
+                font-size: 22px;
+                font-weight: 800;
+                position: relative;
+                top: 20px;
+                transform: rotate(20deg);
+            }
+        }
+    }
+
+    &__product-img {
+        width: 168px;
+        position: relative;
+        margin-left: calc(50% - (168px / 2));
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    &__p {
+        margin-bottom: 10px;
+    }
+}
+
+.voucher-from {
+    .flex {
+        .discount {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 3px;
+            align-items: center;
+
+            .voucher__product__percentage-container {
+                border-radius: $border-radius-small;
+                width: 100px;
+                height: 53px;
+
+                &__percentage {
+                    top: 10px;
+                    transform: rotate(0deg);
+                }
+            }
+
+            .disclaimer {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.voucher:first-of-type {
+    margin-top: 0;
+}
+
+/* TABLET PORTRAIT - 768PX */
+@media only screen and (min-width: $tablet-portrait) {
+    .voucher {
+        margin: 0;
+    }
+}
+
+/* TABLET PORTRAIT - 1024PX */
+@media only screen and (min-width: $tablet-landscape) {
+    .voucher {
+        .button {
+            display: inline-block;
+        }
+    }
+}
+
+/* TABLET PORTRAIT - 1280PX
+@media only screen and (min-width: $desktop-1280) {
+    .voucher:hover {
+        .button-secondary {
+            i {
+                margin-left: $icon-margin-button-hover !important;
+                transition: $transition-time !important;
+            }
+        }
+    }
+}*/
+
+/* DESKTOP - 1440PX */
+@media screen and (min-width: $desktop-3) {
+    .voucher {
+        &__product-img {
+            width: 225px;
+            position: relative;
+            margin-left: calc(50% - (225px / 2));
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+    }
+}

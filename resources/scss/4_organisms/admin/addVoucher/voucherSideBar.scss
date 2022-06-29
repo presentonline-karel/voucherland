@@ -1,0 +1,60 @@
+.voucher-sidebar {
+    div {
+        h4 {
+            margin-bottom: 10px;
+        }
+    }
+
+    .specs {
+        margin-bottom: 30px;
+
+        .flex {
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+
+            i {
+                width: 20px;
+                color: $neutrals-8;
+            }
+
+            p {
+                color: $neutrals-8;
+            }
+        }
+    }
+
+    .admin-add-line {
+        margin-bottom: 30px;
+    }
+
+    .creator {
+        .flex {
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 30px;
+
+            h4 {
+                margin-bottom: 0;
+            }
+
+            img {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .barcode {
+        &__code-container {
+            width: 100%;
+            border: $border-input;
+            border-radius: $border-radius-small;
+            padding: 30px;
+        }
+    }
+}

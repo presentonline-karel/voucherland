@@ -1,0 +1,39 @@
+.admins {
+    .admin {
+        background-color: $neutrals-2;
+        padding: 30px;
+        border-radius: $border-radius-big;
+        text-align: center;
+        border: $border-admin-item;
+
+        &__picture {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: $border-admin-admins;
+            margin-bottom: 30px;
+        }
+
+        .flex {
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            
+            p {
+                color: $neutrals-6;
+                margin-left: 20px;
+            }
+        }
+
+        &__content {
+            &__input {
+                width: 20px;
+                height: 20px;
+                border-radius: 5px;
+                border: $border-input;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.admin-container {
+    margin-left: auto;
+    width: calc(100vw - 338px);
+    padding: 50px 92px 50px 50px;
+}
+
+/* DESKTOP - QHD */
+@media screen and (min-width: $desktop-qhd) {
+    .admin-container {
+        padding-right: 732px;
+    }
+}
+
+/* DESKTOP - 4K */
+@media screen and (min-width: $desktop-4k) {
+    .admin-container {
+        padding-right: 2012px;
+    }
+}

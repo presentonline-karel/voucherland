@@ -1,0 +1,109 @@
+.voucher-admin {
+    justify-content: space-between;
+    align-items: center;
+    background-color: $neutrals-2;
+    padding: 15px 20px;
+    border-radius: $border-radius-small;
+    margin-bottom: 10px;
+    border: $border-admin-item;
+
+    .flex {
+        justify-content: flex-start;
+        align-items: center;
+        gap: 30px;
+
+        i {
+            transform: rotate(0deg) !important;
+        }
+    }
+
+    &__input {
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+        border: $border-input;
+        cursor: pointer;
+    }
+
+    &__code {
+        background-color: $add-color;
+        color: $neutrals-1;
+        margin-left: 20px;
+    }
+
+    &__store {
+        width: 70px;
+        height: 21.4px;
+    }
+
+    &__product {
+        color: $neutrals-8;
+    }
+
+    &__discount {
+        background-color: $primary-color;
+        color: $neutrals-8;
+    }
+
+    &__downloads {
+        background-color: $neutrals-8;
+        color: $neutrals-1;
+    }
+
+    &__status {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+
+        i {
+            font-size: 20px;
+            height: 20px;
+            line-height: 20px;
+            position: relative;
+            top: 10px;
+        }
+    }
+
+    &__expirydate {
+        background-color: $expired-color;
+        color: $neutrals-1;
+    }
+}
+
+/* .voucher-admin.public {
+    .voucher-admin__status {
+        background-color: $succes-light-color;
+        border: 1px solid $add-color;
+
+        i {
+            color: $add-color;
+        }
+    }
+}
+
+.voucher-admin.private {
+    .voucher-admin__status {
+        background-color: $neutrals-1;
+        border: 1px solid $primary-color;
+
+        i {
+            color: $primary-color;
+        }
+    }
+}
+
+.voucher-admin.expired {
+    .voucher-admin__status {
+        background-color: $error-light-color;
+        border: 1px solid $expired-color;
+
+        i {
+            color: $expired-color;
+        }
+    }
+} */
+
+.voucher-admin:last-of-type {
+    margin-bottom: 0;
+}

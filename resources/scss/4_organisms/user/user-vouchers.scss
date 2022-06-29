@@ -1,0 +1,15 @@
+/* DESKTOP - QHD */
+@media screen and (min-width: $desktop-qhd) {
+    .saved-vouchers {
+        min-height: calc(100vh - 115px - 235px - 352px);
+        //115px nav, 235px header, 112px menu, 352px footer
+    }
+}
+
+/* DESKTOP - 4K */
+@media screen and (min-width: $desktop-4k) {
+    .saved-vouchers {
+        min-height: calc(100vh - 173px - 235px - 352px);
+        //173px nav, 235px header, 112px menu, 352px footer
+    }
+}

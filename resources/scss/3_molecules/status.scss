@@ -1,0 +1,43 @@
+.status {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+
+    .status-icon {
+        font-size: 20px;
+        height: 20px;
+        line-height: 20px;
+        position: relative;
+        top: 10px;
+    }
+}
+
+.status {
+    &.public {
+        background-color: $succes-light-color;
+        border: 1px solid $add-color;
+    
+        .status-icon {
+            color: $add-color;
+        }
+    }
+
+    &.private {
+        background-color: $neutrals-1;
+        border: 1px solid $primary-color;
+
+        .status-icon {
+            color: $primary-color;
+        }
+    }
+
+    &.expired {
+        background-color: $error-light-color;
+        border: 1px solid $expired-color;
+
+        .status-icon {
+            color: $expired-color;
+        }
+    }
+}

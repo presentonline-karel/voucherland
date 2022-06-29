@@ -1,0 +1,29 @@
+.admin-numbers {
+    width: 100%;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 50px;
+
+    .item {
+        flex: 1;
+        padding: 20px;
+        background-color: $neutrals-2;
+        border: $border-input;
+        border-radius: $border-radius-big;
+
+        .p {
+            margin-bottom: 10px;
+        }
+
+        .flex {
+            width: 100%;
+            justify-content: space-between;
+            align-items: baseline;
+
+            .tag-percentage {
+                //background-color: $add-color;
+                color: $neutrals-1;
+            }
+        }
+    }
+}

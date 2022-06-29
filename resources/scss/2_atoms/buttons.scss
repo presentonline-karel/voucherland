@@ -1,0 +1,154 @@
+.button {
+    font-family: $primary-font;
+    font-weight: 700;
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.button-primary {
+    font-size: 20px;
+    background-color: $primary-color;
+    color: $neutrals-8;
+    border-radius: $border-radius-small;
+    border: none;
+}
+
+.button-secondary {
+    font-size: 16px;
+    background-color: $primary-color;
+    color: $neutrals-8;
+    border-radius: $border-radius-small;
+
+    i {
+        transition: all $transition-time ease-in-out;
+    }
+}
+
+.button-tertiary {
+    font-size: 14px;
+    background-color: transparent;
+    color: $neutrals-8;
+    border: $border-button-tertiary;
+    border-radius: $border-radius-small;
+
+    i {
+        transition: all $transition-time ease-in-out;
+    }
+}
+
+#register {
+    color: $neutrals-8;
+    background-color: $primary-color;
+    border: none !important;
+}
+
+#login {
+    background-color: $neutrals-5;
+    color: $neutrals-8;
+    border: none !important;
+}
+
+.button-grey {
+    background-color: $neutrals-5;
+}
+
+//ADD/REMOVE BUTTONS
+.button-add {
+    background-color: $add-color;
+    color: $neutrals-1;
+}
+
+.button-delete {
+    background-color: $expired-color;
+    color: $neutrals-1;
+}
+
+
+
+/* DESKTOP - 1280PX */
+@media screen and (min-width: $desktop-1) {
+    .button:hover {
+        cursor: pointer;
+    }
+
+    .button:disabled,
+    .button[disabled]{
+        opacity: 0.5;
+        cursor: default !important;
+        background-color: $neutrals-5;
+        color: $neutrals-8;
+    }
+
+    .button[disabled]:hover{
+        cursor: default !important;
+        background-color: $neutrals-5;
+    }
+
+    .button-primary:hover {
+        background-color: $primary-hover-color;
+        transition: $transition-time;
+        cursor: pointer;
+    }
+
+    .button-secondary:hover {
+        cursor: pointer;
+
+        i {
+            margin-left: $icon-margin-button-hover;
+            transition: $transition-time;
+        }
+    }
+
+    .button-secondary-hover:hover {
+        background-color: $primary-hover-color;
+        transition: $transition-time;
+    }
+
+    .button-tertiary:hover {
+        cursor: pointer;
+
+        i {
+            margin-left: $icon-margin-button-hover;
+            transition: $transition-time;
+        }
+    }
+
+    #register:hover {
+        background-color: $primary-hover-color;
+        transition: $transition-time;
+        cursor: pointer;
+    }
+
+    #login:hover {
+        background-color: $grey-hover-color;
+        transition: $transition-time;
+        cursor: pointer;
+
+        i {
+            margin-left: 0;
+        }
+    }
+
+    .button-grey:hover {
+        background-color: $grey-hover-color;
+        transition: $transition-time;
+    }
+
+    .button-add:hover {
+        background-color: $add-hover-color;
+        transition: $transition-time;
+        cursor: pointer;
+    }
+    
+    .button-delete:hover {
+        background-color: $delete-hover-color;
+        transition: $transition-time;
+        cursor: pointer;
+    }
+}

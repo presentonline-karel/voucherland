@@ -1,0 +1,12 @@
+.addVoucher {
+    justify-content: space-between;
+    gap: 30px;
+
+    .voucher-content {
+        width: calc(100% - 246px);
+    }
+
+    .voucher-sidebar {
+        width: 246px;
+    }
+}

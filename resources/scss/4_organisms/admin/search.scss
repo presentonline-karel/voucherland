@@ -1,0 +1,30 @@
+.admin-search {
+    margin-bottom: 30px;
+    
+    .form {
+        .flex {
+            align-items: center;
+            margin-bottom: 15px;
+
+            .search-icon {
+                font-size: 16px;
+                line-height: 16px;
+                color: $neutrals-8;
+                margin-right: 10px;
+            }
+
+            .input-search {
+                border: none;
+                font-family: $primary-font;
+                font-size: 16px;
+                font-weight: 400;
+                color: $neutrals-8;
+                width: 100%;
+            }
+
+            .input-search::placeholder {
+                color: $neutrals-8;
+            }
+        }
+    }
+}

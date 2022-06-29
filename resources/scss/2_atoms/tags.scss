@@ -1,0 +1,31 @@
+.tag {
+    font-family: $primary-font;
+    font-size: 14px;
+    font-weight: 400;
+
+    padding: 6px 10px;
+    border-radius: $border-radius-small;
+    display: inline-block;
+}
+
+.tag-expired {
+    margin-bottom: 0 !important;
+}
+
+.expiry-date {
+    background-color: $expired-color;
+    color: $neutrals-1;
+    margin-bottom: 30px;
+}
+
+.tag-article {
+    background-color: $secondary-color;
+    color: $neutrals-1;
+    margin-bottom: 10px;
+}
+
+.tag-media {
+    background-color: $primary-color;
+    color: $neutrals-8;
+    margin-bottom: 10px;
+}

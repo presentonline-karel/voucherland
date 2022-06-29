@@ -1,0 +1,53 @@
+.admin-header {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .flex {
+        align-items: center;
+
+        h1 {
+            a {
+                margin-right: 20px;
+            }
+
+            margin-right: 20px;
+        }
+
+        .voucher-state {
+            width: 40px;
+            height: 40px;
+            background-color: $succes-light-color;
+            border: 1px solid $add-color;
+            text-align: center;
+            border-radius: 50%;
+
+            i {
+                font-size: 20px;
+                width: 20px;
+                height: 20px;
+                position: relative;
+                top: 10px;
+                color: $add-color;
+            }
+        }
+    }
+
+    .buttons {
+        gap: 10px;
+
+        .button {
+            border-radius: $border-radius-small;
+            font-size: 20px;
+        }
+    }
+}
+
+.admin-articles-header {
+    margin-bottom: 50px;
+}
+
+.admin-admins-header {
+    margin-bottom: 50px;
+}

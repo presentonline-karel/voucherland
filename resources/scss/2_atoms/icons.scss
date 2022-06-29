@@ -1,0 +1,42 @@
+.button-i {
+    margin-left: $icon-margin-button;
+}
+
+.button-i-reverse {
+    margin-right: $icon-margin-button;
+}
+
+.tag-i {
+    margin-right: $icon-margin-tag;
+}
+
+//FAQ
+.faq {
+    .question {
+        i {
+            font-size: 24px;
+            transition: transform 0.5s ease-in;
+        }
+
+        .icon-min {
+            opacity: 0;
+        }
+    }
+}
+
+.faq.active i {
+    transform: rotate(180deg);
+}
+
+.table__table-row__table-data i {
+    transform: rotate(0deg) !important;
+}
+
+.faq.active .icon {
+    display: none;
+}
+
+.faq.active .icon-min {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}

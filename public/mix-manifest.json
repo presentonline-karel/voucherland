@@ -1,0 +1,18 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/js/nav.js": "/js/nav.js",
+    "/js/expire-counter.js": "/js/expire-counter.js",
+    "/js/counter-up-animation.js": "/js/counter-up-animation.js",
+    "/js/search-function.js": "/js/search-function.js",
+    "/js/tabbar.js": "/js/tabbar.js",
+    "/js/accordion.js": "/js/accordion.js",
+    "/js/fixed-length-string.js": "/js/fixed-length-string.js",
+    "/js/selected-items.js": "/js/selected-items.js",
+    "/js/disabled-buttons.js": "/js/disabled-buttons.js",
+    "/js/admin-percentages.js": "/js/admin-percentages.js",
+    "/js/form-feedback.js": "/js/form-feedback.js",
+    "/js/cookies.js": "/js/cookies.js",
+    "/js/modal.js": "/js/modal.js",
+    "/css/app.css": "/css/app.css",
+    "/css/style.css": "/css/style.css"
+}

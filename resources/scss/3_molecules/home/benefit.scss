@@ -1,0 +1,30 @@
+.benefit {
+    margin-top: 30px;
+
+    .flex {
+        gap: 10px;
+        align-items: center;
+    }
+
+    &__number-container {
+        width: 50px;
+        height: 50px;
+        background-color: $neutrals-8;
+        border-radius: 50%;
+        text-align: center;
+
+        &__number {
+            color: $neutrals-1;
+            line-height: 30px;
+            padding-top: 10px;
+        }
+    }
+
+    &__p {
+        padding-left: 60px;
+    }
+}
+
+.benefit:first-of-type {
+    margin-top: 0;
+}

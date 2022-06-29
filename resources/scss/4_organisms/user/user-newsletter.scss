@@ -1,0 +1,62 @@
+.newsletter {
+    &__box {
+        margin-top: 30px;
+        background-color: $neutrals-3;
+        border-radius: $border-radius-small;
+        padding: 20px;
+
+        &__status {
+            padding: 10px 20px;
+            background-color: $succes-light-color;
+            border-radius: $border-radius-small;
+            border: 1px solid $succes-color;
+
+            .p, i {
+                color: $neutrals-8;
+            }
+
+            i {
+                margin-top: 3px;
+            }
+        }
+    }
+}
+
+/* TABLET PORTRAIT - 768PX */
+@media only screen and (min-width: $tablet-portrait) {
+    .newsletter {
+        &__box {
+            max-width: 605px;
+        }
+    }
+}
+
+/* DESKTOP - 1280PX */
+@media screen and (min-width: $desktop-1) {
+    .newsletter {
+        padding: 50px 100px;
+    }
+}
+
+/* DESKTOP - HD */
+@media screen and (min-width: $desktop-hd) {
+    .newsletter {
+        padding: 50px 340px;
+    }
+}
+
+/* DESKTOP - QHD */
+@media screen and (min-width: $desktop-qhd) {
+    .newsletter {
+        padding: 50px 660px;
+        min-height: calc(100vh - 115px - 235px - 352px);
+        //115px nav, 235px header, 112px menu, 352px footer
+    }
+}
+
+/* DESKTOP - 4K */
+@media screen and (min-width: $desktop-4k) {
+    .newsletter {
+        padding: 50px 1300px;
+    }
+}

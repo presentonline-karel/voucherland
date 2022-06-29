@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container,
+body,
+html {
+    overflow-x: hidden;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%; //important voor home header
+    max-width: 100%;
+}
+
+body {
+    background-color: $neutrals-1;
+    min-height: 100vh;
+    /* min-height: fill-available;
+    min-height: -webkit-fill-available; */
+}
+html {
+    /* height: fill-available;
+    height: -webkit-fill-available; */
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: $neutrals-8;
+    display: inline-block;
+}

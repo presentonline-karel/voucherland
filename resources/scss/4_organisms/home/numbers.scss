@@ -1,0 +1,71 @@
+.numbers {
+    padding: 75px 20px;
+    background-color: $neutrals-1;
+}
+
+/* TABLET PORTRAIT - 768PX */
+@media only screen and (min-width: $tablet-portrait) {
+    .numbers {
+        padding: 75px 30px;
+
+        &__item:first-of-type {
+            padding-right: 100px;
+        }
+
+        &__item:last-of-type {
+            padding-left: 100px;
+        }
+    }
+}
+
+/* TABLET PORTRAIT - 1024PX */
+@media only screen and (min-width: $tablet-landscape) {
+    .numbers {
+        display: flex;
+        justify-content: space-between;
+        padding: 75px 100px;
+
+        &__item {
+            margin-top: 0;
+        }
+    }
+}
+
+/* DESKTOP - 1280PX */
+@media screen and (min-width: $desktop-1) {
+    .numbers {
+        padding: 125px 178px;
+
+        &__item {
+            margin-top: 0;
+        }
+    }
+}
+
+/* DESKTOP - 1600PX */
+@media screen and (min-width: $desktop-5) {
+    .numbers {
+        padding: 125px 258px;
+    }
+}
+
+/* DESKTOP - HD */
+@media screen and (min-width: $desktop-hd) {
+    .numbers {
+        padding: 125px 498px;
+    }
+}
+
+/* DESKTOP - QHD */
+@media screen and (min-width: $desktop-qhd) {
+    .numbers {
+        padding: 125px 818px;
+    }
+}
+
+/* DESKTOP - 4K */
+@media screen and (min-width: $desktop-4k) {
+    .numbers {
+        padding: 125px 1458px;
+    }
+}

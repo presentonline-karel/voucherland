@@ -1,0 +1,81 @@
+/* TABLET PORTRAIT - 1024PX */
+@media only screen and (min-width: $tablet-landscape) {
+    .contact-tablet-desktop {
+        width: 100vw;
+
+        .contact-section {
+            width: 38vw;
+        }
+
+        .contactform {
+            width: 62vw;
+        }
+    }
+}
+
+/* DESKTOP - 1280PX */
+@media only screen and (min-width: $desktop-1) {
+    .contact-tablet-desktop {
+        .contact-section {
+            width: 34vw;
+            padding-right: 77px;
+        }
+
+        .contactform {
+            width: 66vw;
+            padding-left: 77px;
+        }
+    }
+}
+
+/* DESKTOP - 1440PX */
+@media only screen and (min-width: $desktop-3) {
+    .contact-tablet-desktop {
+        .contact-section {
+            width: 38vw;
+        }
+
+        .contactform {
+            width: 62vw;
+        }
+    }
+}
+
+/* DESKTOP - 1920PX */
+@media only screen and (min-width: $desktop-hd) {
+    .contact-tablet-desktop {
+        .contact-section {
+            width: 42vw;
+        }
+
+        .contactform {
+            width: 58vw;
+        }
+    }
+}
+
+/* DESKTOP - 2560PX */
+@media only screen and (min-width: $desktop-qhd) {
+    .contact-tablet-desktop {
+        .contact-section {
+            width: 44vw;
+        }
+
+        .contactform {
+            width: 56vw;
+        }
+    }
+}
+
+/* DESKTOP - 2560PX */
+@media only screen and (min-width: $desktop-qhd) {
+    .contact-tablet-desktop {
+        .contact-section {
+            width: 46vw;
+        }
+
+        .contactform {
+            width: 54vw;
+        }
+    }
+}

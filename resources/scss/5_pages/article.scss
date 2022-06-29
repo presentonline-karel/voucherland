@@ -1,0 +1,117 @@
+.article-page {
+    .center {
+        .p {
+            text-align: left;
+        }
+    }
+}
+
+/* TABLET PORTRAIT - 1024PX */
+@media only screen and (min-width: $tablet-landscape) {
+    .article-page {
+        img {
+            max-height: 300px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        h2 {
+            padding: 0 106px;
+        }
+
+        .p {
+            padding: 0 106px;
+        }
+
+        .button {
+            margin-left: 106px;
+        }
+    }
+}
+
+/* DESKTOP - 1280PX */
+@media screen and (min-width: $desktop-1) {
+    .article-page {
+        position: relative;
+
+        h1 {
+            //padding: 0 323px;
+            margin-bottom: 50px;
+            max-width: 394px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        img {
+            max-height: 300px;
+            width: calc(100% - (2 * 112px));
+            margin: 0 112px 50px 112px;
+            max-width: 816px;
+        }
+
+        h2 {
+            padding: 0 0px;
+            text-align: left;
+            max-width: 605px;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .p {
+            padding: 0 0px;
+            margin-bottom: 50px;
+            max-width: 605px;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .p:last-of-type {
+            margin: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .button {
+            margin-left: 0px;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+
+        .button:hover {
+            i {
+                margin-left: 0;
+                margin-right: $icon-margin-button-hover;
+            }
+        }
+    }
+}
+
+/* DESKTOP - HD */
+@media screen and (min-width: $desktop-hd) {
+    .article-page {
+        .button {
+            left: 340px;
+        }
+    }
+}
+
+/* DESKTOP - QHD */
+@media screen and (min-width: $desktop-qhd) {
+    .article-page {
+        .button {
+            left: 660px;
+        }
+    }
+}
+
+/* DESKTOP - 4K */
+@media screen and (min-width: $desktop-4k) {
+    .article-page {
+        .button {
+            left: 1300px;
+        }
+    }
+}

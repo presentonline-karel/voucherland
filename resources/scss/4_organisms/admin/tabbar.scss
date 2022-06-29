@@ -1,0 +1,124 @@
+.wrapper {
+    .tabs {
+        ul {
+            display: flex;
+            background-color: $neutrals-1;
+            list-style-type: none;
+            border: $border-input;
+            border-radius: 5px;
+            margin-bottom: 50px;
+
+            li {
+                flex: 1;
+                padding: 15px;
+                border-right: $border-input;
+                text-align: center;
+                color: $neutrals-8;
+                font-size: 14px;
+                font-weight: 700;
+                font-family: $primary-font;
+                cursor: pointer;
+                transition: all 0.2s ease;
+                position: relative;
+
+                .icon {
+                    margin-right: $icon-margin-button;
+                }
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    bottom: -1px;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background: $add-color;
+                    transition: all 0.2s ease;
+                    opacity: 0;
+                }
+
+                &.private {
+                    &:hover {
+                        background: $primary-light-color;
+                        color: $primary-color;
+
+                        &:before {
+                            background: $primary-color;
+                        }
+                    }
+                }
+
+                &.expired {
+                    &:hover {
+                        background: $error-light-color;
+                        color: $expired-color;
+
+                        &:before {
+                            background: $expired-color;
+                        }
+                    }
+                }
+
+                &:hover {
+                    background: $succes-light-color;
+                    color: $add-color;
+                }
+
+                &:hover:before {
+                    opacity: 1;
+                }
+            }
+
+            .active {
+                background: $succes-light-color;
+                color: $add-color;
+
+                &.private {
+                    background: #fff7e3;
+                    color: $primary-color;
+
+                    &:before {
+                        background: $primary-color;
+                    }
+                }
+
+                &.expired {
+                    background: $error-light-color;
+                    color: $expired-color;
+
+                    &:before {
+                        background: $expired-color;
+                    }
+                }
+
+                &:before {
+                    opacity: 1;
+                }
+            }
+
+            li:last-child {
+                border-right: 0px;
+            }
+        }
+    }
+
+    .content {
+        .tab_wrap {
+            h1 {
+                margin-bottom: 30px;
+            }
+
+            .public {
+                color: $add-color;
+            }
+
+            .private {
+                color: $primary-color;
+            }
+
+            .expired {
+                color: $expired-color;
+            }
+        }
+    }
+}

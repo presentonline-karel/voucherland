@@ -1,0 +1,44 @@
+//STATIC COLORS
+$primary-color: #FFBA08;
+$secondary-color: #023E8A;
+$expired-color: #DB4437;
+
+$neutrals-1: #FFFFFF;
+$neutrals-2: #F8F8F8;
+$neutrals-3: #F5F3F4;
+$neutrals-4: #E9ECEF;
+$neutrals-5: #D3D3D3;
+$neutrals-6: #5F5F5F;
+$neutrals-7: #495057;
+$neutrals-8: #1D1D1D;
+
+
+
+/* SUCCES/ERROR/ADD */
+$succes-color: #70E000;
+$succes-light-color: #F0FFF0;
+
+$error-color: #D00000;
+$error-light-color: #FFD4D4;
+
+$primary-light-color: #fff7e3;
+
+$add-color: #0CA669;
+
+
+
+/* HOVER COLORS */
+$primary-hover-color: #e0a200;
+$grey-hover-color: #ADB5BD;
+$add-hover-color: #0a7a4d;
+$delete-hover-color: #ba0404;
+
+
+
+//PRESETS
+.primary-color {
+    color: $primary-color;
+}
+.red {
+    color: $expired-color;
+}

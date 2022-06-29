@@ -1,0 +1,115 @@
+.articles {
+    &__items {
+        .article {
+            background-color: $neutrals-1;
+            border: $border-item;
+            border-radius: $border-radius-small;
+            text-align: center;
+            margin-top: 20px;
+
+            a {
+                height: 100%;
+                width: 100%;
+            }
+
+            .container-a {
+                display: initial;
+            }
+
+            &__img {
+                border-radius: 10px 10px 0px 0px;
+                width: calc(100% - 2px);
+                padding-top: 1px;
+                height: 170px;
+                object-fit: cover;
+            }
+
+            &__content {
+                width: 100%;
+                text-align: left;
+                padding: 20px;
+                height: 100%;
+                height: calc(100% - 170px);
+
+                h2 {
+                    margin-bottom: 30px;
+                }
+
+                .flex {
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            }
+        }
+
+        .article-black {
+            background-color: $neutrals-8;
+
+            .article__content {
+                h2 {
+                    color: $neutrals-1 !important;
+                }
+
+                .flex {
+                    .min-read {
+                        color: $neutrals-1;
+                    }
+                }
+            }
+        }
+
+        .article:first-of-type {
+            margin-top: 0;
+        }
+    }
+}
+
+/* DESKTOP - 1280PX */
+@media screen and (min-width: $desktop-1) {
+    .articles {
+        &__items {
+            .article {
+                &__content {
+                    h2 {
+                        margin-bottom: 10px;
+                    }
+
+                    .flex {
+                        flex-direction: column-reverse;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+
+                        .min-read {
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* DESKTOP - 1440PX */
+@media screen and (min-width: $desktop-3) {
+    .articles {
+        &__items {
+            .article {
+                &__content {
+                    h2 {
+                        margin-bottom: 30px;
+                    }
+
+                    .flex {
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .min-read {
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

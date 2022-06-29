@@ -1,0 +1,39 @@
+.faq {
+    width: 100%;
+    margin-top: 0;
+    border: $border-input;
+    cursor: pointer;
+    border-radius: $border-radius-big;
+    margin-bottom: 20px;
+    background-color: $neutrals-2;
+
+    .question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .answer {
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+.faq.active .answer {
+    height: auto;
+}
+
+.faq.active {
+    background-color: $neutrals-1;
+
+    .question {
+        h2 {
+            font-weight: 400;
+        }
+    }
+
+    .answer {
+        padding: 0px 20px 20px 20px;
+    }
+}

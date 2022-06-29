@@ -1,0 +1,115 @@
+.body-login-register {
+    background-color: transparent;
+}
+
+.register-section {
+    text-align: center;
+    height: 100vh;
+    top: 0vh;
+    background: linear-gradient(0deg, #1D1D1D 32.81%, rgba(29, 29, 29, 0.65) 100%), url('./../../../public/img/register-login-img.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &__content {
+        margin: 0;
+        width: 285px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+
+        h1 {
+            margin-bottom: 20px;
+            color: $neutrals-1;
+        }
+
+        .form {
+            .input {
+                width: 100%;
+                text-align: left;
+                margin: 0;
+                padding: 8px 20px;
+                margin-bottom: 10px;
+            }
+
+            .input:last-of-type {
+                margin-bottom: 20px;
+            }
+
+            #password {
+                margin-bottom: 10px;
+            }
+
+            .button {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .flex-between {
+                margin-bottom: 20px;
+            }
+
+            .remember-input {
+                display: inline-block;
+                font-size: 12px;
+                margin-top: 0;
+                margin-bottom: 0;
+                color: $neutrals-1;
+            }
+
+            .forgot-password {
+                font-family: $primary-font;
+                font-size: 12px;
+                font-weight: 400;
+                color: $neutrals-1;
+            }
+        }
+
+        &__toLogin {
+            &__p {
+                font-size: 12px;
+                margin-bottom: 10px;
+                color: $neutrals-1;
+            }
+
+            .button-primary {
+                width: 100%;
+                text-align: center;
+                display: block;
+                background-color: $neutrals-5;
+                margin-bottom: 50px;
+            }
+
+            .button-tertiary {
+                color: $neutrals-1;
+            }
+        }
+    }
+}
+
+/* DESKTOP - 1280PX */
+@media screen and (min-width: $desktop-1) {
+    .register-section {
+        text-align: center;
+        height: 100vh;
+        top: 0vh;
+        background: linear-gradient(90deg, #1D1D1D 32.81%, rgba(29, 29, 29, 0.65) 100%), url('./../../../public/img/register-login-img.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 10%;
+
+        
+        &__content {
+            margin: 0;
+            width: 285px;
+            position: absolute;
+            top: 50%;
+            left: 100px;
+            -ms-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+        }
+    }
+}

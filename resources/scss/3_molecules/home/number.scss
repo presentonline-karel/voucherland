@@ -1,0 +1,50 @@
+.numbers {
+    &__item {
+        text-align: center;
+        margin-top: 50px;
+
+        &__title {
+            font-family: $primary-font;
+            font-size: 14px;
+            font-weight: 700;
+
+            color: $neutrals-6;
+            margin-bottom: 10px;
+        }
+
+        &__number {
+            font-family: $primary-font;
+            font-size: 100px;
+            font-weight: 700;
+
+            color: $neutrals-8;
+            line-height: 100px;
+        }
+    }
+
+    &__item:first-of-type {
+        margin-top: 0;
+    }
+}
+
+/* TABLET PORTRAIT - 1024PX */
+@media only screen and (min-width: $tablet-landscape) {
+    .numbers {
+        &__item {
+            &__number {
+                font-size: 75px;
+            }
+        }
+    }
+}
+
+/* DESKTOP - 1280PX */
+@media screen and (min-width: $desktop-1) {
+    .numbers {
+        &__item {
+            &__number {
+                font-size: 100px;
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+.user-menu {
+    padding: 30px 20px 0px 20px;
+
+    &__items {
+        display: flex;
+        justify-content: left;
+        margin-bottom: 20px;
+        gap: 5px;
+
+        &__item {
+            text-decoration: none;
+            color: $neutrals-8;
+            background-color: $neutrals-5;
+            padding: 10px 20px;
+            border-radius: $border-radius-small;
+            font-family: $primary-font;
+            font-size: 14px;
+            font-weight: 600;
+
+            &:hover {
+                background-color: $grey-hover-color;
+                transition: $transition-time;
+                cursor: pointer;
+            }
+        }
+
+        .active {
+            background-color: $primary-color;
+        }
+    }
+}
+
+/* TABLET PORTRAIT - 768PX */
+@media only screen and (min-width: $tablet-portrait) {
+    .user-menu {
+        padding: 30px 30px 0px 30px;
+    }
+}
+
+/* DESKTOP - 1280PX */
+@media screen and (min-width: $desktop-1) {
+    .user-menu {
+        padding: 50px 100px 0px 100px;
+    }
+}
+
+/* DESKTOP - HD */
+@media screen and (min-width: $desktop-hd) {
+    .user-menu {
+        padding: 50px 340px 0px 340px;
+    }
+}
+
+/* DESKTOP - QHD */
+@media screen and (min-width: $desktop-qhd) {
+    .user-menu {
+        padding: 50px 660px 0px 660px;
+    }
+}
+
+/* DESKTOP - 4K */
+@media screen and (min-width: $desktop-4k) {
+    .user-menu {
+        padding: 50px 1300px 0px 1300px;
+    }
+}

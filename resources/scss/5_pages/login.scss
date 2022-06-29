@@ -1,0 +1,13 @@
+.register-section {
+    &__content {
+        &__toLogin {
+            #register {
+                background-color: $neutrals-5;
+            }
+
+            #register:hover {
+                background-color: $grey-hover-color;
+            }
+        }
+    }
+}

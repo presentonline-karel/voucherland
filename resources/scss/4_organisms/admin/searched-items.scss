@@ -1,0 +1,35 @@
+.searched-items {
+    display: none;
+
+    .searched-item {
+        display: none;
+    }
+
+    .searched-articles {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .searched-vouchers {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+}
+
+/* DESKTOP - QHD */
+@media screen and (min-width: $desktop-qhd) {
+    .searched-items {
+        min-height: calc(100vh - 115px - 307px - 352px);
+        //115px menu, 307px header, 352px footer
+    }
+}
+
+/* DESKTOP - 4K */
+@media screen and (min-width: $desktop-4k) {
+    .searched-items {
+        min-height: calc(100vh - 172px - 307px - 352px);
+        //172px menu, 307px header, 352px footer
+    }
+}

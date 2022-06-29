@@ -1,0 +1,63 @@
+.contact-section {
+    background-color: $primary-color;
+
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    .p {
+        color: $neutrals-8;
+    }
+
+    &__info {
+        margin-top: 30px;
+
+        .flex {
+            align-items: center;
+            gap: 10px;
+
+            i {
+                font-size: 20px;
+                color: $neutrals-8;
+            }
+        }
+    }
+
+    .socials {
+        margin-top: 30px;
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        .flex {
+            gap: 5px;
+            
+            a {
+                width: 40px;
+                height: 40px;
+                background-color: $neutrals-8;
+                border-radius: 50%;
+                text-align: center;
+                position: relative;
+
+                i {
+                    font-size: 20px;
+                    line-height: 20px;
+                    position: relative;
+                    top: 10px;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+/* DESKTOP - 1280PX */
+@media only screen and (min-width: $desktop-1) {
+    .contact-section {
+        h1 {
+            margin-bottom: 20px;
+        }
+    }
+}

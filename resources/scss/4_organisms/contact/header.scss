@@ -1,0 +1,32 @@
+.contact-header {
+    .banner-title {
+        color: $neutrals-8;
+        margin-bottom: 10px;
+    }
+}
+
+/* DESKTOP - 1280PX */
+@media only screen and (min-width: $desktop-1) {
+    .contact-header {
+        .banner-title {
+            font-size: 48px;
+            line-height: 48px;
+            margin-bottom: 20px;
+        }
+
+        .p {
+            width: 50%;
+        }
+    }
+}
+
+/* DESKTOP - 1440PX */
+@media only screen and (min-width: $desktop-3) {
+    .contact-header {
+        .banner-title {
+            font-size: 70px;
+            line-height: 75px;
+            margin-bottom: 30px;
+        }
+    }
+}

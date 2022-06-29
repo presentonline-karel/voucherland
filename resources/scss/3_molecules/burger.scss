@@ -1,0 +1,57 @@
+.burger {
+    display: block;
+    position: relative;
+    z-index: 5;
+}
+
+.burger div {
+    width: 25px;
+    height: 2px;
+    margin: 5px;
+    transition: all 0.3s ease;
+    background-color: $neutrals-8;
+}
+
+.nav-home {
+    .burger div {
+        background-color: $neutrals-1;
+    }
+}
+
+.burger .line2 {
+    position: relative;
+    right: 8px;
+}
+
+//CROSS LAYOUT
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+    background-color: $neutrals-1;
+}
+
+.nav-home {
+    .toggle .line1 {
+        background-color: $neutrals-8;
+    }
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+    background-color: $neutrals-1;
+}
+
+.nav-home {
+    .toggle .line3{
+        background-color: $neutrals-8;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .burger {
+        display: none;
+    }
+}

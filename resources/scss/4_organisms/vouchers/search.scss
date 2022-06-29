@@ -1,0 +1,40 @@
+.search-voucher {
+    background-color: $neutrals-8;
+    text-align: center;
+
+    h1 {
+        color: $neutrals-1;
+    }
+}
+
+/* TABLET PORTRAIT - 768PX */
+@media only screen and (min-width: $tablet-portrait) {
+    .search-voucher {
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        .search-form {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+
+            .input {
+                margin: 0;
+                max-width: 285px;
+            }
+        }
+    }
+}
+
+/* TABLET LANDSCAPE - 1024PX */
+@media only screen and (min-width: $tablet-landscape) {
+    .search-voucher {
+        .search-form {
+            .input {
+                text-align: left;
+                padding: 8px 20px;
+            }
+        }
+    }
+}
